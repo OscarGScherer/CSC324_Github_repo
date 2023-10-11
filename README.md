@@ -19,7 +19,7 @@ Repo for my individual project for the FALL 2023 CSC324 course
 
 * **What needs improvement?**
 
-  It would be interesting to explore match timeline data, instead of just using end of match data.
+  It would be interesting to explore more of match timeline data, maybe include position data or event data to create a heat map of player positions and events in the game map.
   It would be interesting to make the app more visualy appealing using custom graphics.
 
 * **Sources or References**
@@ -42,12 +42,12 @@ Repo for my individual project for the FALL 2023 CSC324 course
   *The produced table shows the player's match history, putting each match on each row and giving their basic information for filtering purposes.
   The information displayed is the date and time the match was played, whether the player won or lost, the champion the player was playing as, the role the player was playing in, and
   the chamption the player was going up against (the enemy laner's champion).
-  Each row is color coded to indicate victory or defeat, and each row is indexed in order of most recent to least recent match*
+  Each row is color coded to indicate victory or defeat, and each row is indexed in order of most recent to least recent match. Rows can be selected to produce a match timeline*
 
   **WHY:**
   *The table provides an easy way for the user to filter which matches to be displayed on the main barchart for instance, a user might want to look at their performance on only won matches
   or on only matches where they played a specific champion, or where they played against a specific champion
-  The colors and the indexing help the user find a specific entry in the table on their respective barchart group*
+  The colors and the indexing help the user find a specific entry in the table on their respective barchart group. The color of a group changes if the respective match was selected in the table*
   
 * **Description of encoding and mapping of the barchart.**
 
@@ -61,4 +61,13 @@ Repo for my individual project for the FALL 2023 CSC324 course
   *The barchart provides an interactive way to measure all aspects of performace a player might be interested in improving.
   The selectable comparrison target allows the user to focus on any type of improvement they prefer for instance, they might be looking to improve relative to their teammates, or relative to their enemy laner.
   The colors on the barchart provide make it easier for the user to reference one entry in the barchart plot to their respective entry in the table.*
+
+  * **Description of encoding and mapping of the linechart.**
+
+  **WHAT/HOW:**
+  *The produced linechart display some selected variable of the player trhoughout an individual match, and just like the barchart the user can choose to compare their stats against their teammates or enemies.
+  The y axis displays the stat chosen and the x axis displays the time in the match in minutes. The match the user wishes to get the linechart of can be chosen using the table.*
+
+  **WHY:**
+  *The linechart provides whithin-match information that the user can analyze to determine how they are performing on each part of the match, like during the "early", "mid" or "late game", relative to the other players. This helps giving a sense to the user of what metrics they are lacking and what metrics they are exceeding.*
   
